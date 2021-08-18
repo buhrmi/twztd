@@ -76,7 +76,8 @@
 	}
 	.socials img {
 		margin: 10px;
-		max-width: 5vw;
+		width: 8vw;
+		max-width: 60px;
 	}
 	.gigs {
 		
