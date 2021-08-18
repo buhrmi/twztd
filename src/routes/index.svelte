@@ -24,28 +24,31 @@
 </svelte:head>
 
 {#if fadeIn}
-<section>
-	<img src={face} in:fly={{duration: 2000}} alt="Profile Phote" class="face">
-</section>
-
-<div class="fly" in:fly={{y: 40, duration: 2000}}>
-	<section class="logo">
-		<img src={logo} alt="TWZTD" >
+	<section class="face">
+		<img src={face} in:fly={{duration: 2000}} alt="Profile Phote">
 	</section>
 
-	<section class="socials" in:fly={{y: 40, duration: 2000}}>
-		<a target="_blank" href="https://instagram.com/TWZTDMUZIK"><img src={instagram} alt="Instagram"></a>
-		<a target="_blank" href="https://twitter.com/TWZTDMUZIK"><img src={twitter} alt="Twitter"></a>
-		<a target="_blank" href="https://soundcloud.com/TWZTDMUZIK"><img src={soundcloud} alt="SoundCloud"></a>
-		<a target="_blank" href="https://open.spotify.com/artist/3rltKni0Xo8ReBTzjvubPF"><img src={spotify} alt="Spotify"></a>
-	</section>
-</div>
+	<div class="fly" in:fly={{y: 40, duration: 2000}}>
+		<section class="logo">
+			<img src={logo} alt="TWZTD">
+		</section>
+
+		<section class="socials" in:fly={{y: 40, duration: 2000}}>
+			<a target="_blank" href="https://instagram.com/TWZTDMUZIK"><img src={instagram} alt="Instagram"></a>
+			<a target="_blank" href="https://twitter.com/TWZTDMUZIK"><img src={twitter} alt="Twitter"></a>
+			<a target="_blank" href="https://soundcloud.com/TWZTDMUZIK"><img src={soundcloud} alt="SoundCloud"></a>
+			<a target="_blank" href="https://open.spotify.com/artist/3rltKni0Xo8ReBTzjvubPF"><img src={spotify} alt="Spotify"></a>
+		</section>
+	</div>
 {/if}
-
 
 <style>
 	.face {
+		text-align: center;
+	}
+	.face img {
 		width: 100%;
+		max-width: 1400px;
 	}
 	.logo {
 		position: relative;
@@ -61,7 +64,7 @@
 		text-align: center;
 	}
 	.socials a {
-		margin: 10px;
+		margin: 20px;
 	}
 	.socials img {
 		max-width: 10vw;
