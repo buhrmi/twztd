@@ -63,6 +63,7 @@
 	}
 	.logo img {
 		/* margin: 0 auto; */
+		max-width: 900px;
 		width: 60%;
 	}
 	.socials {
