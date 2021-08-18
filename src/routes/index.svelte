@@ -25,24 +25,28 @@
 </svelte:head>
 
 {#if fadeIn}
-	<section class="face">
-		<img src={face} in:fly={{duration: 2000}} alt="Profile Phote">
+<section class="face">
+	<img src={face} in:fly={{duration: 2000}} alt="Profile Phote">
+</section>
+
+<div class="fly" in:fly={{y: 40, duration: 2000}}>
+	<section class="logo">
+		<img src={logo} alt="TWZTD">
 	</section>
 
-	<div class="fly" in:fly={{y: 40, duration: 2000}}>
-		<section class="logo">
-			<img src={logo} alt="TWZTD">
-		</section>
-
-		<section class="socials" in:fly={{y: 40, duration: 2000}}>
-			<a target="_blank" href="https://instagram.com/TWZTDMUZIK"><img src={instagram} alt="Instagram"></a>
-			<a target="_blank" href="https://twitter.com/TWZTDMUZIK"><img src={twitter} alt="Twitter"></a>
-			<a target="_blank" href="https://soundcloud.com/TWZTDMUZIK"><img src={soundcloud} alt="SoundCloud"></a>
-			<a target="_blank" href="https://open.spotify.com/artist/3rltKni0Xo8ReBTzjvubPF"><img src={spotify} alt="Spotify"></a>
-			<a target="_blank" href="https://www.facebook.com/TWZTDMUZIK/"><img src={facebook} alt="Facebook"></a>
-		</section>
-	</div>
+	<section class="socials" in:fly={{y: 40, duration: 2000}}>
+		<a target="_blank" href="https://instagram.com/TWZTDMUZIK"><img src={instagram} alt="Instagram"></a>
+		<a target="_blank" href="https://twitter.com/TWZTDMUZIK"><img src={twitter} alt="Twitter"></a>
+		<a target="_blank" href="https://soundcloud.com/TWZTDMUZIK"><img src={soundcloud} alt="SoundCloud"></a>
+		<a target="_blank" href="https://open.spotify.com/artist/3rltKni0Xo8ReBTzjvubPF"><img src={spotify} alt="Spotify"></a>
+		<a target="_blank" href="https://www.facebook.com/TWZTDMUZIK/"><img src={facebook} alt="Facebook"></a>
+	</section>
+</div>
 {/if}
+
+<div class="gigs">
+	<a class="bit-widget-initializer" data-artist-name="TWZTD" data-display-local-dates="false" data-display-past-dates="false" data-auto-style="false" data-text-color="#FFFFFF" data-link-color="#a500b4" data-background-color="rgba(0,0,0,0)" data-display-limit="15" data-display-start-time="false" data-link-text-color="#FFFFFF" data-display-lineup="true" data-display-play-my-city="true" data-separator-color="rgba(124,124,124,0.25)"></a>
+</div>
 
 <style>
 	.face {
@@ -67,6 +71,11 @@
 	}
 	.socials img {
 		margin: 10px;
-		max-width: 10vw;
+		max-width: 5vw;
+	}
+	.gigs {
+		
+		max-width: 800px;
+		margin: 80px auto;
 	}
 </style>
