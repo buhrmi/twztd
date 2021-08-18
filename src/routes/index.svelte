@@ -7,6 +7,7 @@
 	import logo from '../../static/logo_white.png'
 	import instagram from '../../static/instagram.png'
 	import spotify from '../../static/spotify.png'
+	import facebook from '../../static/facebook.png'
 	import soundcloud from '../../static/soundcloud.png'
 	import twitter from '../../static/twitter.png'
 	import { fly } from 'svelte/transition'
@@ -38,6 +39,7 @@
 			<a target="_blank" href="https://twitter.com/TWZTDMUZIK"><img src={twitter} alt="Twitter"></a>
 			<a target="_blank" href="https://soundcloud.com/TWZTDMUZIK"><img src={soundcloud} alt="SoundCloud"></a>
 			<a target="_blank" href="https://open.spotify.com/artist/3rltKni0Xo8ReBTzjvubPF"><img src={spotify} alt="Spotify"></a>
+			<a target="_blank" href="https://www.facebook.com/TWZTDMUZIK/"><img src={facebook} alt="Facebook"></a>
 		</section>
 	</div>
 {/if}
@@ -63,10 +65,8 @@
 		margin-top: 5vw;
 		text-align: center;
 	}
-	.socials a {
-		margin: 20px;
-	}
 	.socials img {
+		margin: 10px;
 		max-width: 10vw;
 	}
 </style>
